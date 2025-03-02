@@ -14,11 +14,11 @@ export default function ModelViewer({ modelPath }) {
       style={{ width: "100vw", height: "100vh" }}
       shadowscamera={{ position: [0, 2, 5], fov: 50 }}
     >
-      <ambientLight intensity={1} />
+      <ambientLight intensity={0.5} />
       <directionalLight position={[5, 5, 2]} intensity={1.5} castShadow />
       <directionalLight position={[-5, -5, -2]} intensity={0.8} />
 
-      <Environment preset="studio" />
+      <Environment preset="city" />
       <Model modelPath={modelPath} />
       <OrbitControls enableZoom={true} />
     </Canvas>
